@@ -11,6 +11,241 @@
     <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
     <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png" />
     <title>VolunteerNG | Our Team</title>
+
+    <style>
+        body {
+            font: 15px/1.5 Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background-color: #ffffff;
+            overflow-y: scroll;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+           width: 16.66%;
+        }
+
+        .col-3 {
+           width: 25%;
+        }
+
+        .col-4 {
+           width: 33.33%;
+        }
+
+        .col-5 {
+           width: 41.66%;
+        }
+
+        /* Top Header */
+        .topmost-nav {
+            position: relative;
+            display: block;
+            height: 60px;
+            background-color: white;
+            padding: 0 15px 0 15px;
+            z-index: 1;
+        }
+
+        li {
+        list-style: none;
+        }
+
+        .topmost-nav .left,
+        .topmost-nav .right {
+        display: inline-block;
+        padding-top: 20px;
+        }
+
+        .topmost-nav .left {
+        float: left;
+        margin-left: 10px;
+        }
+
+        .topmost-nav .right {
+        float: right;
+        margin-right: 10px;
+        text-align: right;
+        right: 0;
+        }
+
+        .topmost-nav .right a {
+        margin-right: 20px;
+        }
+
+        .topmost-nav .left a:hover i {
+        font-size: 2.5ex;
+        }
+
+        i {
+        color: #188038;
+        }
+
+        a {
+        text-decoration: none;
+        color: #188038;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header **/
+        header {
+            background: #188038;
+            color: #ffffff;
+            padding-top: 10px;
+            min-height: 50px;
+            border-bottom: #96e6b3 3px solid;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 10px 0 10px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight,
+        header .current a {
+            background: #96e6b3;
+            font-weight: bold;
+            /* text-decoration: none; */
+            border-radius: 7px;
+            padding: 11px;
+            margin: 15px;
+            color: #000000;
+        }
+
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 120px;
+            background-color: #031308;
+        }
+
+        .footer {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            padding: 0 5% 0 5%;
+        }
+
+        .footer div:nth-child(1) {
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+            padding: 20px 20px 20px 0;
+        }
+
+        .footer div:nth-child(1) i {
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+        .footer span,
+        .footer a {
+           color: white;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-left: -18px;
+        }
+
+        .footer div:nth-child(4) > h3 {
+           margin-left: 0px;
+        }
+
+        .footer ul li {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer input {
+            font-size: 15px;
+            float: left;
+            right: 0;
+            font-weight: bold;
+        }
+
+        .footer .submit {
+            height: 22.8px;
+            background: #188038;
+            width: 30px;
+            text-align: center;
+        }
+
+        .footer .input-field span:hover {
+           opacity: 0.5;
+        }
+
+        .footer .submit i {
+           color: white;
+        }
+
+        .footer span {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .footer ul li i {
+            margin-left: -25px;
+            color: white;
+        }
+
+        .footer a:hover,
+        .footer ul li:hover,
+        .footer ul li i:hover {
+           color: #188038;
+        }
+
+        .footer a {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .footer a i {
+           color: white;
+        }
+
+        .footer .inline a {
+            display: inline-block;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -111,22 +346,19 @@
     </style>
 
     <!-- Top Header -->
-    <div class="top-header">
-        <div class="container">
-            <div id="branding">
-                <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
-                <a href=""><i class="fab fa-instagram"></i> </a> &nbsp; &nbsp; &nbsp;
-                <a href=""><i class="fab fa-twitter"></i> </a> &nbsp; &nbsp; &nbsp;
-                <a href=""><i class="fab fa-youtube"></i> </a> &nbsp; &nbsp; &nbsp;
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><i class="fa fa-phone"></i> +234 7071234567</li>
-                    <li><i class="fa fa-envelope"></i> volunteerng@gmail.com</li>
-                </ul>
-            </nav>
+    <div class="topmost-nav">
+        <div class="left col-3">
+            <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
+            <a href=""><i class="fab fa-instagram"></i> </a> &nbsp; &nbsp; &nbsp;
+            <a href=""><i class="fab fa-twitter"></i> </a> &nbsp; &nbsp; &nbsp;
+            <a href=""><i class="fab fa-youtube"></i> </a> &nbsp; &nbsp; &nbsp;
+        </div>
+        <div class="right col-6">
+            <a href="tel:7071234567"><i class="fa fa-phone"></i> +234 7071234567</a>
+            <a href="mailto:volunteerng@gmail.com"><i class="fa fa-envelope"></i> volunteerng@gmail.com</a>
         </div>
     </div>
+    
 
     <!-- Header -->
     <header>
@@ -185,6 +417,53 @@
 
 
     </div>
+
+    <footer>
+        <div class="footer">
+            <div class="col-3">
+                <img src="images/volunteerNG_white_full.png" height="50" width="80"> <br>
+                <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
+                <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
+                <a href=""><i class="fas fa-map-marker"></i>Find Us</a>
+            </div>
+            <div class="col-3">
+                <h3>Donations</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Food Donation</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Money Donation</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Water Supply</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Outfit Donation</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Food Item Donation</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Medical Donations</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Our Team</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Testimonies</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; Gallery</li>
+                    <li><i class="fas fa-arrow-right"></i>&nbsp; About Us</li>
+            </div>
+            <div>
+                <h3>Stay Updated</h3>
+                <span>Subscribe to our newsletter</span>
+                <div class="input-field">
+                    <form>
+                        <input type="text">
+                        <span class="submit"><i class="fas fa-arrow-right"></i></span>
+                    </form>
+                </div>
+                <div class="inline">
+                    <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp;
+                    <a href=""><i class="fab fa-instagram"></i> </a> &nbsp; &nbsp;
+                    <a href=""><i class="fab fa-twitter"></i> </a> &nbsp; &nbsp;
+                    <a href=""><i class="fab fa-youtube"></i> </a> &nbsp; &nbsp;
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 
 </body>
 
