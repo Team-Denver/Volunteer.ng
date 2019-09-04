@@ -49,13 +49,13 @@ $count = mysqli_num_rows($query);
     <header>
         <div class="container">
             <div id="branding">
-                <a href="index.html">
-                    <img src="images/logo.png" width="165" height="70" />
+                <a href="index.php">
+                    <img src="images/logo.png" width="165" height="70" alt="Volunteer.ng Logo" />
                 </a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li class="current"><a href="entities.php">Entities</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">The Team</a></li>
