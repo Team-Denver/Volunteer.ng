@@ -258,6 +258,8 @@
 
     .col-3 {
       width: 25%;
+      cursor: pointer;
+      
     }
 
     .col-4 {
