@@ -3,12 +3,14 @@ body {
     padding: 0;
     margin: 0;
     background-color: #ffffff;
+    background-image: url('elderr.png');
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    background-image: image(elderr.png);
 }
 
 ul {
@@ -82,6 +84,8 @@ header {
     padding-top: 10px;
     min-height: 50px;
     border-bottom: #96e6b3 3px solid;
+    background-image: url("../images/elderr.png");
+    
 }
 
 header a {
