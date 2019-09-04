@@ -78,6 +78,8 @@ header li {
 
 header #branding {
   float: left;
+  position: relative;
+  left: 65px;
 }
 
 header #branding h1 {
@@ -153,7 +155,7 @@ header a:hover {
   background: url("../images/african_school_kids.jpg") no-repeat 0 -200px;
   text-align: center;
   background-size: cover;
-  color: #ffffff;
+  color: #188038;
 }
 
 #what-we-do h1 {
@@ -461,4 +463,44 @@ article#about-col {
 
 .sponsors div img {
   width: 50%;
+}
+
+/* banner with slogan just before footer */
+
+.container-fluid {
+  background-color: #188038;
+  height: 6.8em;
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin: auto;
+  position: relative;
+  top: 120px;
+}
+
+.container-fluid button {
+  position: relative;
+  top: 30px;
+  right: 20px;
+  float: right;
+  letter-spacing: 0.06rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#makeDon {
+  margin-right: 10px;
+  background-color: #96E6B3;
+  color: black;
+}       
+
+#slogan {
+  float: left;
+  color: #FFFFFF;
+  position: relative;
+  left: 5px;
+  top: 15px;
+  font-family: 'Manjari', sans-serif;
+  letter-spacing: 0.08rem;
 }
