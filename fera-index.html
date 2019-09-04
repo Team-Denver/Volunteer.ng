@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+    <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="./css/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png" />
+    <title>Volunteer NG</title>
+</head>
+
+<body>
+    <!-- Banner showing contact info at top of page -->
+    <div class="top-banner">
+        <div class="top-banner__social-media">
+            <a href="" class="top-banner__social-media__info">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="" class="top-banner__social-media__info">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="top-banner__social-media__info">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="top-banner__social-media__info">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <div class="top-banner__contact">
+            <div class="top-banner__contact__info">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+2347071234567">
+                    +234 707 1234 567
+                </a>
+            </div>
+
+            <div class="top-banner__contact__info">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:volunteerng@gmail.com">
+                    volunteerng@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header showing title and navigation -->
+    <header class="page-header">
+        <img class="page-header__logo" src="images/logo.png" />
+        <h1 class="page-header__title">
+            Volunteer.ng
+        </h1>
+
+        <nav class="page-header__nav">
+            <!--The nav tag represents page navigation area-->
+            <a href="index.html" class="button nav-button">
+                Home
+            </a>
+            <a href="entities.html" class="button nav-button">
+                Entities
+            </a>
+            <a href="about.html" class="button nav-button">
+                About
+            </a>
+            <a href="team.html" class="button nav-button">
+                The Team
+            </a>
+            <a href="login.html" class="button nav-button is-auth">
+                <!--'auth' is short for authentication.-->
+                <i class="fa fa-user"></i>
+                Login
+            </a>
+            <a href="signup.html" class="button nav-button is-auth">
+                <i class="fa fa-person-booth"></i>
+                Sign Up
+            </a>
+        </nav>
+    </header>
+
+    <!--The main tag represents the main content of the page-->
+    <main>
+        <section class="landing">
+            <div class="dark-background"></div>
+            <h1 class="landing__headline">
+                You can make a difference!
+            </h1>
+
+            <p class="landing__tag-line">
+                Commited to making the World a better place for Everyone
+            </p>
+
+            <div class="landing__actions">
+                <a href="payment.html" class="landing__action-button button">
+                    <i class="fa fa-heart"></i>
+                    Donate
+                </a>
+                <a href="signup.html" class="landing__action-button button">
+                    <i class="fa fa-handshake"></i>
+                    I Need a Volunteer
+                </a>
+            </div>
+        </section>
+
+        <!-- How you can Help -->
+        <section class="ways-to-help">
+            <h2>How You Can Help</h2>
+
+            <div class="ways-to-help__wrapper">
+                <div class="ways-to-help__option-card card">
+                    <div class="card__thumbnail">
+                        <!--Using font-awesome for card__thumbnail requires this wrapper-->
+                        <i class="fa fa-heart fa-4x"></i>
+                    </div>
+
+                    <div class="card__content">
+                        <h3>Donation Money</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
+                            augue, viverra sit amet ultricies.
+                        </p>
+                        <a href="" class="button card__content__action-button">
+                            Donate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ways-to-help__option-card card">
+                    <div class="card__thumbnail">
+                        <!--Using font-awesome for card__thumbnail requires this wrapper-->
+                        <i class="fa fa-heart fa-4x"></i>
+                    </div>
+
+                    <div class="card__content">
+                        <h3>Donate Materials</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
+                            augue, viverra sit amet ultricies
+                        </p>
+                        <a href="" class="button is-disabled card__content__action-button">
+                            Coming Soon
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ways-to-help__option-card card">
+                    <div class="card__thumbnail">
+                        <!--Using font-awesome for card__thumbnail requires this wrapper-->
+                        <i class="fa fa-heart fa-4x"></i>
+                    </div>
+
+                    <div class="card__content">
+                        <h3>Donate Service</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
+                            augue, viverra sit amet ultricies
+                        </p>
+                        <a href="" class="button is-disabled card__content__action-button">
+                            Coming Soon
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What we Do -->
+        <section class="mission-statement">
+            <h1>What we Do</h1>
+            <p class="wide-paragraph">
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
+                graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century
+                who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a
+                type specimen book.
+            </p>
+        </section>
+
+        <!-- Our Cause -->
+        <section class="featured-charities">
+            <h2>Our Cause</h2>
+
+            <div class="featured-charities__wrapper">
+                <div class="featured-charities__goal-card goal-card card">
+                    <img src="./images/education.jpg" class="card__thumbnail" />
+
+                    <div class="card__content is-overlapping">
+                        <h3>Feed the Hungry</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
+                            augue, viverra sit amet ultricies
+                        </p>
+                        <div class="goal-card__progress">
+                            <span class="goal-card__progress__target"><b>Goal: N10,000</b></span>
+                            <span class="goal-card__progress__current"><b>Raised: N1,000</b></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-charities__goal-card goal-card card">
+                    <img src="./images/disaster.jpg" class="card__thumbnail" />
+
+                    <div class="card__content is-overlapping">
+                        <h3>Provide Clean Water</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
+                            augue, viverra sit amet ultricies
+                        </p>
+                        <div class="goal-card__progress">
+                            <span class="goal-card__progress__target"><b>Goal: N10,000</b></span>
+                            <span class="goal-card__progress__current"><b>Raised: N1,000</b></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-charities__goal-card goal-card card">
+                    <img src="./images/medical_care.jpg" class="card__thumbnail" />
+
+                    <div class="card__content is-overlapping">
+                        <h3>Medical Care</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
+                            augue, viverra sit amet ultricies
+                        </p>
+                        <div class="goal-card__progress">
+                            <span class="goal-card__progress__target"><b>Goal: N10,000</b></span>
+                            <span class="goal-card__progress__current"><b>Raised: N1,000</b></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

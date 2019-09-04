@@ -1,46 +1,45 @@
 // Show Team Members
 
 const TeamList = document.querySelector(".container");
-let team = [
-  {
+let team = [{
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "../images/disaster.jpg"
+    image: "./images/disaster.jpg"
   }
 ];
 

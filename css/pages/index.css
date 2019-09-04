@@ -1,0 +1,71 @@
+@import '../components/global.css';
+@import '../components/buttons.css';
+@import '../components/top-banner.css';
+@import '../components/footer.css';
+@import '../components/cards.css';
+@import '../components/page-header.css';
+
+.landing {
+  position: relative;
+  height: 95vh;
+  padding-top: 12vh; /*Account for the fixed top banner and header. Prevent content from appearing under the header.*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../images/holding_hands.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.landing__headline {
+  margin-bottom: 10vh;
+}
+
+.landing__tag-line {
+  margin-bottom: 10vh;
+}
+
+.landing__actions {
+  display: flex;
+}
+
+.landing__action-button {
+  margin: 5vw;
+}
+
+.ways-to-help {
+  min-height: 50vh;
+}
+
+.ways-to-help__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mission-statement {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-charities {
+  min-height: 50vh;
+  margin-bottom: 50px;
+}
+
+.featured-charities__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.goal-card {
+
+}
+
+section, header, footer, aside {
+  border-bottom: 1px solid green; /*For development purposes only. Helps to visualize the sectional divisions.*/
+}

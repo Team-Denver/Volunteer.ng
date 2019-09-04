@@ -9,36 +9,47 @@ body {
 .col-1 {
   width: 8.33%;
 }
+
 .col-2 {
   width: 16.66%;
 }
+
 .col-3 {
   width: 25%;
 }
+
 .col-4 {
   width: 33.33%;
 }
+
 .col-5 {
   width: 41.66%;
 }
+
 .col-6 {
   width: 50%;
 }
+
 .col-7 {
   width: 58.33%;
 }
+
 .col-8 {
   width: 66.66%;
 }
+
 .col-9 {
   width: 75%;
 }
+
 .col-10 {
   width: 83.33%;
 }
+
 .col-11 {
   width: 91.66%;
 }
+
 .col-12 {
   width: 100%;
 }
@@ -117,11 +128,13 @@ a {
 .second-nav #branding img {
   margin: 10px 0 10px 20px;
 }
+
 .second-nav div {
   display: block;
   float: left;
   z-index: 1;
 }
+
 .second-nav ul {
   list-style-type: none;
   float: right;
@@ -163,6 +176,7 @@ a {
   padding: 0 10%;
   margin: 0 auto;
 }
+
 #teams .member {
   float: left;
   text-align: center;
@@ -190,7 +204,7 @@ a {
 }
 
 footer {
-  margin-top: 900px;
+  margin-top: 120px;
   background-color: #031308;
 }
 
@@ -198,12 +212,14 @@ footer {
   width: 90%;
   display: flex;
   flex-direction: row;
+  padding: 0 5% 0 5%;
 }
 
 .footer div:nth-child(1) {
   text-align: center;
-  padding: 20px;
-  margin: auto 0;
+  justify-self: center;
+  align-self: center;
+  padding: 20px 20px 20px 0;
 }
 
 .footer div:nth-child(1) i {
@@ -211,19 +227,20 @@ footer {
   margin-right: 10px;
 }
 
-.footer div:not(nth-child(1)) {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .footer span,
 .footer a {
   color: white;
 }
+
 .footer h3 {
-  margin-left: 20px;
   color: white;
+  margin-left: -18px;
 }
+
+.footer div:nth-child(4) > h3 {
+  margin-left: 0px;
+}
+
 .footer ul li {
   margin-bottom: 20px;
   color: white;
@@ -255,6 +272,7 @@ footer {
   display: inline-block;
   margin-bottom: 15px;
 }
+
 .footer ul li i {
   margin-left: -25px;
   color: white;
@@ -274,6 +292,7 @@ footer {
 .footer a i {
   color: white;
 }
+
 .footer .inline a {
   display: inline-block;
   padding-top: 20px;
@@ -283,6 +302,7 @@ footer {
   .second-nav::after {
     background: none;
   }
+
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
@@ -290,14 +310,17 @@ footer {
     margin: 0 auto;
     padding: 0 auto;
   }
+
   .second-nav {
     display: none;
   }
+
   .second-nav ul li a,
   .second-nav ul li a i {
     color: #188038;
     font-weight: 500%;
   }
+
   #teams .member {
     width: 100%;
   }
