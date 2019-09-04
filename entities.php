@@ -25,7 +25,7 @@ $count = mysqli_num_rows($query);
     <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
-    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
+    <link rel="icon" href="images/favicon.ico" alt="volunteerng icon" sizes="16x16" type="image/png" />
 </head>
 
 <body>
@@ -50,7 +50,7 @@ $count = mysqli_num_rows($query);
         <div class="container">
             <div id="branding">
                 <a href="index.html">
-                    <img src="images/logo.png" width="165" height="70" />
+                    <img src="images/logo.png" alt="volunteerng logo" width="165" height="70" />
                 </a>
             </div>
             <nav>

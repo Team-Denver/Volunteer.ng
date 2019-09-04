@@ -37,7 +37,7 @@ include('includes/head.php');
         <div class="container">
             <div id="branding">
                 <a href="index.html">
-                    <img src="images/logo.png" width="165" height="70" />
+                    <img src="images/logo.png" alt="VolunteerNG logo" width="165" height="70" />
                 </a>
             </div>
             <nav>
@@ -113,7 +113,7 @@ include('includes/head.php');
 
         <br>
         <div class="pay-button-container">
-            <img src="images/trusted_by_flutterwave.png">
+            <img src="images/trusted_by_flutterwave.png" alt="Flutterwave donation channel">
         </div>
         <!--I dont know how "RECAPTCHA" works-->
 
@@ -132,7 +132,7 @@ include('includes/head.php');
     <footer>
         <div class="footer">
             <div class="col-3">
-                <img src="./images/volunteerNG_white_full.png" height="100" width="130"> <br>
+                <img src="images/volunteerNG green background-01png" alt="VolunteerNG logo" height="100" width="130"> <br>
                 <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
                 <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
                 <a href=""><i class="fas fa-map-marker"></i>Find Us</a>

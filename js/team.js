@@ -4,42 +4,42 @@ const TeamList = document.querySelector(".container");
 let team = [{
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   },
   {
     name: "Abasifreke Ekwere",
     track: "Front End",
-    image: "./images/disaster.jpg"
+    image: "https://res.cloudinary.com/dprmplqfj/image/upload/v1567631132/VolunteersNG/disaster_hmocam.jpg"
   }
 ];
 

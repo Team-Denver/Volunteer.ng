@@ -231,7 +231,7 @@ i {
 #what-we-do {
     width: 100%;
     height: 25rem;
-    background: url('../images/holding_hands.jpg') no-repeat 0 -500px;
+    background: url('https://res.cloudinary.com/dprmplqfj/image/upload/v1567631135/VolunteersNG/holding_hands_fk6llh.jpg') no-repeat 0 -500px;
     text-align: center;
     color: #ffffff;
     margin-bottom: 2rem;
@@ -402,55 +402,3 @@ span.raised-text {
     color: #188038;
 }
 
-/* body {
-  background-image: url(../Volunteer.ng/img/larm-rmah-AEaTUnvneik-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-
-.login-page {
-  width: 360px;
-  margin: auto;
-  border: 40%;
-}
-
-.form {
-  position: relative;
-  z-index: 1;
-  background: #ffffff;
-  max-width: 360px;
-  margin: auto;
-  padding: 45px;
-  text-align: center;
-  border: 45px;
-  vertical-align: middle;
-}
-
-input {
-  width: 100%;
-  border: 1px solid grey;
-  box-sizing: border-box;
-  margin: 0 0 15px;
-  font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #188038; 
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-h2 {
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 10px;
-} */
