@@ -54,6 +54,7 @@ $count = mysqli_num_rows($query);
           <li><a href="entities.php">Entities</a></li>
           <li><a href="about.html">About</a></li>
           <li class="current"><a href="team.html">The Team</a></li>
+
           <li class="auth_button">
             <a href="sign-in.php"> <i class="fa fa-user"></i> Login | Sign Up</a>
           </li>

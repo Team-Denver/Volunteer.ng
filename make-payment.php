@@ -45,7 +45,7 @@ include('includes/head.php');
                     <li><a href="index.html">Home</a></li>
                     <li><a href="entities.php">Entities</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">The Team</a></li>
+                    <li><a href="team.php">The Team</a></li>
                     <li class="auth_button">
                         <a href="sign-in.php"> <i class="fa fa-user" style="color: white"></i>
                             Sign In | Sign Up</a>

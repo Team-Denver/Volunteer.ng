@@ -145,7 +145,7 @@ $userId = $_GET['id'];
                     <li><a href="index.html">Home</a></li>
                     <li><a href="entities.php">Entities</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">The Team</a></li>
+                    <li><a href="team.php">The Team</a></li>
                     <li class="auth_button"><a href="login.php"> <i class="fa fa-user"></i> Login</a></li>
                     <li class="auth_button"><a href="signup.php"> <i class="fa fa-person-booth"></i> Sign Up</a></li>
                 </ul>
