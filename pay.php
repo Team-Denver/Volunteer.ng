@@ -3,30 +3,25 @@ require('includes/config.php');
 require('includes/functions.php');
 require('includes/db_connection.php');
 
+//This script initiates payment using the details gotten from the payment page.
+//It calls the Flutterwav Rave API with some options (see below), processes payment & returns a response
 
 if (!isset($_GET['user']) || !isset($_GET['email']) || !isset($_GET['amount']) || !isset($_GET['firstname']) || !isset($_GET['lastname'])) {
+
+  //if any of the required details is missing, we redirect back to the homepage.
   header('Location: index.php');
   exit(0);
 }
 
-$userId = (int) $_GET['user'];
+$userId = (int) $_GET['user']; //cast to integer / number
 $email = $_GET['email'];
-$amount = (int) $_GET['amount'];
+$amount = (int) $_GET['amount']; //cast to integer / number
 $first_name = $_GET['firstname'];
 $last_name = $_GET['lastname'];
 
+$reference = generateRef($userId); //this function generate a unique transaction reference for the payment. (requred by flutterwave)
 
-// $query = mysqli_query($con, "SELECT * FROM users WHERE user_id = '$userId'") or die(mysqli_error($con));
-// $row = mysqli_fetch_array($query);
-
-
-// $userId = 1;
-// $email = 'judd@gmail.com';
-// $amount = 3000;
-
-$reference = generateRef($userId);
-
-$redirectUrl = $baseUrl . '/process_payment.php';
+$redirectUrl = $baseUrl . '/process_payment.php'; //the ourl / link to redicrect to after payment
 
 $curl = curl_init();
 

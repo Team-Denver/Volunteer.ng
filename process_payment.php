@@ -2,13 +2,11 @@
 
 include_once('includes/config.php');
 include('includes/db_connection.php');
-//Here, we process payment, whether succcessfull or failed and update our databse.
+//Here, we process payment, whether succcessfull or failed and update our database.
 
-
+//we get the transaction reference from the url `txref`, and we hit another of Rave endpoint to verify whether transaction is successful or failed.
 if (isset($_GET['txref'])) {
     $ref = $_GET['txref'];
-    $amount = ""; //Correct Amount from Server
-    $currency = ""; //Correct Currency from Server
 
     $query = array(
         "SECKEY" => $flutterWaveSecretKey,
@@ -34,14 +32,14 @@ if (isset($_GET['txref'])) {
 
     $resp = json_decode($response, true);
 
-    $paymentStatus = $resp['data']['status'];
-    $chargeResponsecode = $resp['data']['chargecode'];
-    $chargeAmount = $resp['data']['amount'];
+    $paymentStatus = $resp['data']['status']; //whether payment is successful or failed
+    $chargeResponsecode = $resp['data']['chargecode']; //"00" or "0" means success
+    $chargeAmount = $resp['data']['amount']; //amount paid
     $chargeCurrency = $resp['data']['currency'];
 
     //Donor details
-    $fullName = $resp['data']['custname'];
-    $email = $resp['data']['custemail'];
+    $fullName = $resp['data']['custname']; //the fullname the donor entered
+    $email = $resp['data']['custemail']; //email the donor entered
 
 
     //For tests
@@ -64,9 +62,13 @@ if (isset($_GET['txref'])) {
 
 
         //Get User ID from transaction ref
+
+        //since the transaction reference contains the userId the is being donated to, e.g 1-VLT_5b6677637, has userId `1`
+        //we use this logic to extract it
         $uArray = explode('-', $txref);
         $userId = $uArray[0];
 
+        //get the details of the user from that same userId
         $user_query = mysqli_query($con, "SELECT * FROM users WHERE user_id = '$userId'") or die(mysqli_error($con));
         $row = mysqli_fetch_array($user_query);
 

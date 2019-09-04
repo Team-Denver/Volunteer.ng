@@ -6,9 +6,12 @@ include('includes/functions.php');
 
 
 if (isset($_POST['login'])) {
+
+    //If user wants to login, we get email & password from form
     $email_unsafe = $_POST['email'];
     $pass_unsafe = $_POST['password'];
 
+    //escape any unsafe input
     $email = mysqli_real_escape_string($con, $email_unsafe);
     $password = mysqli_real_escape_string($con, $pass_unsafe);
 
@@ -16,6 +19,7 @@ if (isset($_POST['login'])) {
     $check_query = mysqli_query($con, "SELECT * FROM users WHERE email = '$email' AND password = '$password'") or die(mysqli_error($con));
     $count = mysqli_num_rows($check_query);
 
+    //if user with siuch account doesn't exists, w display and error
     if ($count == 0) {
         //Display Error here
         echo "<script type='text/javascript'>alert('Invalid Details Provided')</script>";
@@ -45,6 +49,7 @@ if (isset($_POST['login'])) {
 
 //Sign Up
 if (isset($_POST['signup'])) {
+    //if user wants to sign up
     $email_unsafe = $_POST['email'];
     $pass_unsafe = $_POST['password'];
     $pass_conf_unsafe = $_POST['password_confirmation'];
@@ -53,6 +58,7 @@ if (isset($_POST['signup'])) {
     $desc_unsafe = $_POST['desc'];
     $amount_unsafe = $_POST['amount'];
 
+    //esape unsafe data
     $email = mysqli_real_escape_string($con, $email_unsafe);
     $password = mysqli_real_escape_string($con, $pass_unsafe);
     $password_confirmation = mysqli_real_escape_string($con, $pass_conf_unsafe);
