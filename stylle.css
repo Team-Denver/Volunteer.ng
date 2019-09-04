@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.our-sponsors{
+    overflow: hidden;
+    text-align: center;
+    background: #96e6b3;
+    padding:60px;
+}
+.our-sponsors h1{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+}
