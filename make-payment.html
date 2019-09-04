@@ -5,19 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Volunteer NG | Entities</title>
-    <link rel="stylesheet" href="./css/team.css" />
-    <link rel="stylesheet" href="./css/signup.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="./css/fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
+    <title>Volunteer NG | Money Donation</title>
+    <link href="./css/fontawesome/css/all.min.css" rel="stylesheet" />
     <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/render.css" />
 </head>
 
 <body>
-    <!-- Top Header -->
-
     <!-- Top-Most Nav Starts Here -->
     <div class="topmost-nav">
         <div class="left col-3">
@@ -32,6 +27,9 @@
         </div>
     </div>
 
+    <!-- Top-Most Nav Starts Here -->
+
+    <!-- Second Nav starts here -->
     <!-- Header -->
     <header>
         <div class="container">
@@ -43,11 +41,11 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="entities.html">Entities</a></li>
+                    <li><a href="entities.html">Entities</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.html">The Team</a></li>
                     <li class="auth_button">
-                        <a href="sign-in.php"> <i class="fa fa-user"></i>
+                        <a href="sign-in.php"> <i class="fa fa-user" style="color: white"></i>
                             Sign In | Sign Up</a>
                     </li>
                 </ul>
@@ -55,52 +53,79 @@
         </div>
     </header>
 
-    <div class="container">
-        <div style="float: center">
-            <h1>Entities</h1>
-            <div class="horizontalLine2"></div>
+
+
+    <!--inputted code here-->
+    <a href="">
+        <h2 id="render"><u>Mon</u>ey Donation</h2>
+    </a><br />
+    <div id="container">
+
+        <div class="how">How do you wish to <a href="">donate?</a></div>
+        <a href="make-payment.html">
+            <div id="midmenuwhite"> <i class="fa fa-money-bill"></i> Money Donations</div>
+        </a>
+        <a href="render-a-service.html">
+            <div class="midmenugreen"> <i class="fas fa-hand-holding-heart  white-fa"></i> Render A Service
+            </div>
+        </a>
+        <a href="material-gift.html">
+            <div class="midmenugreen"> <i class="fa fa-gift white-fa"></i> Material Gift</div>
+        </a>
+        <div class="break"></div>
+
+        <div id="tohelp"> <strong> Your Information</strong></div>
+
+
+        <form method="GET" action="">
+            <div class="contactmenu">First Name <br />
+                <input type="text" placeholder="First Name" required /></div>
+            <div class="contactmenu">Last Name <br />
+                <input type="text" placeholder="Last Name" required /></div>
+
+
+            <div class="break"></div>
+            <div class="number">Email <br />
+                <input type="email" placeholder="Email" required /></div>
+            <div class="number">Phone Number <br />
+                <input type="number" placeholder="Phone Number" required /></div>
+
+            <div class="break"></div>
+            <div class="number">Dedicate donation in honour this Person (optional) <br />
+                <input type="text" placeholder="Full Name of Person" /></div>
+            <div class="number">Amount to Donate <br />
+                <input type="number" placeholder="Amount" required /></div>
+
+            <div class="break"></div>
+            <div class="service">Message</div>
+            <div class="othersinput">
+                <input type="text" placeholder="Leave a Message" />
+            </div>
+
+
+            <div class="pay-button-container">
+                <button type="submit" class="pay-button disabled">Make Payment</button>
+            </div>
+        </form>
+
+        <br>
+        <div class="pay-button-container">
+            <img src="images/trusted_by_flutterwave.png">
         </div>
-
-        <br><br>
-
-        <div class="shadow">
-            <div class="entity">
-                <div class="col-2">
-                    <img src="images/disaster.jpg">
-                </div>
-                <div class="col-10">
-                    <span class="entity-text"> Jude Jonathan </span> <br>
-                    <span class="entity-text"> A Student at Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempora,
-                        quos dolore quod adipisci architecto ullam deleniti odit laudantium </span>
-                    <br>
-                    <span class='entity-text-green'> School Fees </span>
-                </div>
-            </div>
-
-            <span class="entity-text-desc">
-                lorem50 A Student at Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-                quos dolore quod adipisci architecto ullam deleniti odit laudantium doloribus, aliquam voluptate
-                quo totam earum inventore facilis enim repudiandae molestiae reprehenderit. us, aliquam voluptate
-                quo totam earum inventore facilis enim repudiandae molestiae reprehenderit.
-            </span>
-
-            <div class="entity-bottom-text">
-                <span class="entity-goal-text"><b>Goal: N10,000</b></span>
-                <span class="entity-raised-text"><b>Raised: N1,000</b></span>
-            </div>
-            <br>
-            <div class="entity-donate-button">
-                <a href="make-payment.html">Donate Now</a>
-            </div>
+        <!--I dont know how "RECAPTCHA" works-->
 
 
-        </div>
     </div>
 
 
 
+    </div>
 
+
+    </div>
+
+
+    </div>
     <footer>
         <div class="footer">
             <div class="col-3">
@@ -146,7 +171,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./team.js"></script>
 </body>
 
 </html>
