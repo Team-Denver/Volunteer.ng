@@ -15,9 +15,8 @@ signInButton.addEventListener("click", () => {
 //Changes different words in signup tab when signup button is clicked.
 const shuffleWord = () => {
   let words = [
-    "Enter your personal details and start your journey with us.",
+    "About 80 percent of Small and Medium Enterprises, SMEs, in Nigeria fail within the first five years of their existence due to lack of experience and other wrong business practices. Do you need a capable and professional hand willing to volunteer for a project ?",
     "According to a report by Sarah C. and Alicia W. 67% of people found volunteer opportunities online in 2014 vs 34% in 2006.",
-    "Through your collaboration we can change the world one person at a time."
   ];
   const wordFromArr = Math.floor(Math.random() * 3);
   const wordFromString = words[wordFromArr];

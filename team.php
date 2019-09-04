@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+require('includes/db_connection.php');
+include('includes/functions.php');
+
+
+$query = mysqli_query($con, "SELECT * FROM submissions") or die(mysqli_error($con));
+$count = mysqli_num_rows($query);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,7 +80,42 @@
   </section>
 
   <section id="teams">
-    <div class="container col-12"></div>
+    <div class="container col-12">
+
+      <?php
+
+      if ($count == 0) {
+        echo "<h1> NO team member</h1>";
+      } else {
+
+        while ($row = mysqli_fetch_array($query)) {
+
+          $link = $row["cv_link"];
+          $fullname = $row["fullname"];
+          $cloudinary = $row["cloudinary"];
+          $track = $row["track"];
+          $contribution = $row["contribution"];
+          $code = $row["code"];
+
+          ?>
+          <div class="member">
+            <img src="<?php echo $cloudinary ?>" alt="<?php echo $fullname ?>" /> <br />
+            <h3><?php echo $fullname ?></h3>
+            <p>
+              Code: <b><?php echo $code ?></b> | Track: <b><?php echo $track ?></b> <br><br>
+              Contribution: <?php echo $contribution ?>
+            </p>
+            <br>
+            <a href="<?php echo $link; ?>" style="color: green; text-align: center"><b>More Details..</b></a>
+          </div>
+      <?php }
+      }
+
+      ?>
+
+
+
+    </div>
   </section>
 
   <!-- <footer>
@@ -117,7 +164,7 @@
     </div>
   </footer> -->
 
-  <script src="./js/team.js"></script>
+  <!-- <script src="./js/team.js"></script> -->
 </body>
 
 </html>

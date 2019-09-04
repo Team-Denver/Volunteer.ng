@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+require('includes/db_connection.php');
+include('includes/functions.php');
+
+
+$query = mysqli_query($con, "SELECT * FROM users") or die(mysqli_error($con));
+$count = mysqli_num_rows($query);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,17 +18,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Volunteer NG</title>
+    <title>Volunteer NG | Entities</title>
+    <link rel="stylesheet" href="./css/team.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/brands.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/team.css" />
     <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
     <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
 </head>
 
 <body>
     <!-- Top Header -->
+
+    <!-- Top-Most Nav Starts Here -->
     <div class="topmost-nav">
         <div class="left col-3">
             <a href=""><i class="fab fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
@@ -40,8 +56,8 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="entities.php">Entities</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
+                    <li class="current"><a href="entities.php">Entities</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="team.php">The Team</a></li>
                     <li class="auth_button">
                         <a href="sign-in.php"> <i class="fa fa-user"></i>
@@ -52,101 +68,70 @@
         </div>
     </header>
 
-    <article id="about">
-        <div class="container">
-            <article id="about-col">
-                <h1>About Us</h1>
-                <p>
-                    Volunteer.ng is a platform for NGOs and other entities in need of funding and manpower
-                    from the general public. Registered organizations will be able to create projects and receive
-                    funding or volunteer applications from other users.
-                </p>
-                <div class="green">
-                    <h2> AIM </h2>
-                    <ul>
-                        <li> ● To help NGOs, whether small or large scale, to achieve their goals with little or no
-                            hassle.</li>
-                        <li>● To be the go-to platform for fundraising in emergency situations, like in natural
-                            disasters, and for Internally Displaced Persons.</li>
-                        <li>● To raise funds toward long-term projects.</li>
-                        <li>● To create an easy and fast means of payment from donors around the world.</li>
-                        <li>● To get volunteers from across the nation and abroad, willing to give themselves to
-                            service in any NGO/entity registered with us.</li>
-                    </ul>
+    <div class="container">
+        <div style="float: center">
+            <h1>Entities</h1>
+            <div class="horizontalLine2"></div>
+        </div>
 
+        <br><br>
+
+        <?php
+
+        if ($count == 0) {
+            echo "<h1>No Enitity Yes!</h1>";
+        } else {
+            while ($row = mysqli_fetch_array($query)) {
+                $userId = $row['user_id'];
+                //Get total donations for user
+                $user_donation_query = mysqli_query($con, "SELECT SUM(amount) as totalDonations FROM donations WHERE user_id = '$userId'") or die(myslqli_error($con));
+                $donation_row = mysqli_fetch_array($user_donation_query);
+
+                $donations = $donation_row['totalDonations'];
+                ?>
+
+                <div class="shadow">
+                    <div class="entity">
+                        <div class="col-2">
+                            <img src="images/avatar.png">
+                        </div>
+                        <div class="col-10">
+                            <span class="entity-text"> <?php echo $row['name'] ?> </span> <br>
+                            <span class="entity-text"> <?php echo $row['title'] ?> </span>
+                            <br>
+                            <span class='entity-text-green'> <?php echo $row['type'] ?> </span>
+                        </div>
+                    </div>
+
+                    <span class="entity-text-desc">
+                        <?php echo $row['description'] ?>
+                    </span>
+
+                    <div class="entity-bottom-text">
+                        <span class="entity-goal-text"><b>Goal: N<?php echo $row['donation_amount'] ?></b></span>
+                        <span class="entity-raised-text"><b>Raised: <?php echo $donations == '' || $donations == 0 ? 'Nothing' : 'N' . $donations ?></b></span>
+                    </div>
+                    <br>
+                    <div class="entity-donate-button">
+                        <a href="make-payment.php?id=<?php echo $row['user_id'] ?>">Donate Now</a>
+                    </div>
                 </div>
 
-                <br><br>
+        <?php }
+        }
 
-                <h1>How to Join?</h1>
-                <p>
+        ?>
 
-                    To join, follow these steps:
-                    <ol>
-                        <li>1. Fill the form below to sign up or log in if you already have an account.</li>
-                        <li>2. You will be required to choose if you are registering as an organization or as an
-                            individual.</li>
-                        <li>3. Fill other details as required and click on submit.</li>
-                        <li>4. You will get a confirmation email from us to get you started.</li>
-                        <li>5. Once the registration is complete, you can now create your projects as an organization or
-                            manage your individual account to be a Volunteer or a Donor.</li>
-                    </ol>
-                </p>
-            </article>
 
-            <aside id="sidebar">
-                <div class="green">
-                    <h3>What We Offer</h3>
-                    <p>
-                        <ul>
-                            <li>
-                                ● Crowdfunding
-                            </li>
-                            <li>● Easy Donations</li>
-                            <li>● Readily Available Manpower</li>
-                        </ul>
-                    </p>
-                </div>
-            </aside>
-
-            <aside id="sidebar">
-                <div class="green">
-                    <h3>Our Users</h3>
-                    <p>
-                        <ul>
-                            <li>
-                                ● Registered NGOs
-                            </li>
-                            <li>● Unregistered NGOs but with a proven track of record to validate the authenticity</li>
-                            <li>● Volunteers and volunteer enthusiasts</li>
-                            <li>● Donors and partners</li>
-                        </ul>
-                    </p>
-                </div>
-            </aside>
-        </div>
-    </article>
-
-    <br><br>
-    <h1 style="text-align: center">Our Sponsors</h1> <br>
-    <div class="sponsors">
-        <div class="col-4">
-            <img src="images/flutterwave.png" width="70%">
-        </div>
-        <div class="col-4">
-            <img src="images/hng.png" width="70%">
-        </div>
-        <div class="col-4">
-            <img src="images/start_ng.png" width="70%">
-        </div>
     </div>
+
 
 
 
     <footer>
         <div class="footer">
             <div class="col-3">
-                <img src="images/volunteerNG_white_full.png" height="100" width="130"> <br>
+                <img src="./images/volunteerNG_white_full.png" height="100" width="130"> <br>
                 <a href=""><i class="fa fa-phone"></i>+234 7071234567</a>
                 <a href=""><i class="fa fa-envelope"></i>volunteerng@gmail.com</a>
                 <a href=""><i class="fas fa-map-marker"></i>Find Us</a>

@@ -1,16 +1,22 @@
+<?php
+
+$userId = $_GET['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/pages/index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VolunteerNG | Donate</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link href="./css/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="./css/fontawesome/css/solid.css" rel="stylesheet" />
-    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png" />
-    <title>VolunteerNG | Our Team</title>
+    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
 </head>
 
 <body>
@@ -140,8 +146,8 @@
                     <li><a href="entities.php">Entities</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="team.php">The Team</a></li>
-                    <li class="auth_button"><a href="login.html"> <i class="fa fa-user"></i> Login</a></li>
-                    <li class="auth_button"><a href="signup.html"> <i class="fa fa-person-booth"></i> Sign Up</a></li>
+                    <li class="auth_button"><a href="login.php"> <i class="fa fa-user"></i> Login</a></li>
+                    <li class="auth_button"><a href="signup.php"> <i class="fa fa-person-booth"></i> Sign Up</a></li>
                 </ul>
             </nav>
         </div>
@@ -167,16 +173,11 @@
         <div class="form-style-2">
             <div class="form-style-2-heading">Provide your information</div>
             <form action="pay.php" method="get">
-                <input type="hidden" name="user" value="1">
-                <label for="field1"><span>First Name <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field1" value="" /></label>
-                <label for="field1"><span>Last Name <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field1" value="" /></label>
-                <label for="field2"><span>Email <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field2" value="" /></label>
-                <label for="field2"><span>Amount to Donate <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field2" value="" /></label>
-
+                <input type="hidden" name="user" value="<?php echo $userId; ?>">
+                <label for="field1"><span>First Name <span class="required">*</span></span><input type="text" class="input-field" name="firstname" value="" /></label>
+                <label for="field1"><span>Last Name <span class="required">*</span></span><input type="text" class="input-field" name="lastname" value="" /></label>
+                <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="email" value="" /></label>
+                <label for="field2"><span>Amount to Donate <span class="required">*</span></span><input type="text" class="input-field" name="amount" value="" /></label>
 
                 <label><span> </span><input type="submit" value="Submit" /></label>
             </form>

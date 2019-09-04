@@ -1,0 +1,51 @@
+body{
+    min-width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/iyke4life/image/upload/v1567389100/child_qjqat2.jpg");
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.failed-page-container-box{
+  background: #F1FFFA;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    left: 50%;
+    margin-left: -50px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+}
+.failed-icon{
+  width:100px;
+  height:100px;
+  margin-top: 15%;
+}
+.failed-page-try-again-btn {
+  margin-top:10%;
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  background: #F1FFFA;
+  color: #E2574C;
+  border: 1px solid #E2574C;
+  border-radius: 30px;
+  text-align: center;
+  outline: none;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.failed-page-try-again-btn:hover,
+.failed-page-try-again-btn:active {
+  background-color: #F1FFFA;
+  color: #000;
+  width: 180px;
+  transition: width 0.1s ease-in, height 0.1s ease-in, line-height 0.1s ease-in;
+}

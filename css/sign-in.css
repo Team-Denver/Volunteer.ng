@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
 * {
   box-sizing: border-box;
 }
@@ -144,11 +145,13 @@ select {
 }
 
 @keyframes show {
+
   0%,
   49.99% {
     opacity: 0;
     z-index: 1;
   }
+
   50%,
   100% {
     opacity: 1;
@@ -185,8 +188,7 @@ select {
   width: 200%;
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
-  background: url("https://res.cloudinary.com/ayoalaka/image/upload/v1567357252/child_i0syxr.jpg")
-    70%;
+  background: url("https://res.cloudinary.com/ayoalaka/image/upload/v1567357252/child_i0syxr.jpg") 70%;
 }
 
 .container.right-panel-active .overlay {
