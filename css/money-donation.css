@@ -1,0 +1,96 @@
+h1{
+    text-align: center;
+}
+h3{
+    margin-bottom: 30px;
+}
+
+#h1-line{
+    width:6px
+}
+
+
+#amount-box{
+    display: flex;
+    margin-left: 200px;
+    text-align: center;
+}
+.rectangular-box{
+
+    height: 60px;
+    width: 97px;
+    background-color: green;
+    color:white;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.other-amount{
+    height: 60px;
+    width: 97px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+#radials{
+    margin-top:40px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.radial-spacing{
+    margin-left:50px;
+}
+
+.input-spacing{
+    margin-bottom: 5px;
+    display: block;
+    width: 455px;
+    height: 44px;
+   
+}
+
+.form-spacing{
+    display:grid;
+    margin-bottom: 20px;
+    margin-left:60px;
+    grid-template-areas: 
+    "text-box1 text-box2"
+    "text-box3 text-box4"
+    "text-box5 text-box6"
+}
+
+.text-box1{
+    grid-area: text-box1
+}
+.text-box2{
+    grid-area: text-box2
+}
+.text-box3{
+    grid-area: text-box3
+}
+.text-box4{
+    grid-area: text-box4
+}
+.text-box5{
+    grid-area: text-box5
+}
+.text-box6{
+    grid-area: text-box6
+}
+
+.pay-button{
+    width: fit-content;
+    display: block;
+    background-color: #188038;
+    color:white;
+    height :30px;
+    margin-top: 10px;
+}
+
+.make-payment{
+    margin-top:30px;
+   
+}
+.naira{
+    width: 15px;
+}
