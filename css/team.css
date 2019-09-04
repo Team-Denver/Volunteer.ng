@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.topmost-nav {
+  position: relative;
+  display: block;
+  height: 60px;
+  background-color: white;
+  padding: 0 15px 0 15px;
+  z-index: 1;
+}
+
+li {
+  list-style: none;
+}
+
+.topmost-nav .left,
+.topmost-nav .right {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.topmost-nav .left {
+  float: left;
+  margin-left: 10px;
+}
+
+.topmost-nav .right {
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+  right: 0;
+}
+
+.topmost-nav .right a {
+  margin-right: 20px;
+}
+
+.topmost-nav .left a:hover i {
+  font-size: 2.5ex;
+}
+
+i {
+  color: #188038;
+}
+
+a {
+  text-decoration: none;
+  color: #188038;
+}
+
+.second-nav {
+  position: relative;
+  display: block;
+  height: 90px;
+  z-index: 1;
+}
+
+.second-nav::after {
+  content: "";
+  background-image: url(../images/elderr.png);
+  opacity: 0.9;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-position: center -600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -5;
+  height: 90px;
+}
+
+.second-nav #branding img {
+  margin: 10px 0 10px 20px;
+}
+
+.second-nav div {
+  display: block;
+  float: left;
+  z-index: 1;
+}
+
+.second-nav ul {
+  list-style-type: none;
+  float: right;
+  padding-top: 20px;
+}
+
+.second-nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.second-nav ul li a,
+.second-nav ul li a i {
+  color: white;
+  font-weight: 500%;
+}
+
+.second-nav ul li a:hover,
+.second-nav ul li a:hover i {
+  color: #188038;
+}
+
+#team-header {
+  min-height: 200px;
+  background: #ccfccb;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  margin: 70px;
+  border: 0;
+  font-weight: bold;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+#teams .container {
+  display: block;
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+#teams .member {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 6px;
+  padding-bottom: 15px;
+  margin: 4px;
+  font-weight: 500;
+}
+
+#teams .member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px #188038 solid;
+}
+
+#teams .member img:hover {
+  opacity: 0.5;
+}
+
+#teams .member a {
+  text-decoration: none;
+  color: #188038;
+}
+
+footer {
+  margin-top: 120px;
+  background-color: #031308;
+}
+
+.footer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer div:nth-child(1) {
+  text-align: center;
+  padding: 20px;
+  margin: auto 0;
+}
+
+.footer div:nth-child(1) i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.footer div:not(nth-child(1)) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer span,
+.footer a {
+  color: white;
+}
+
+.footer h3 {
+  margin-left: 20px;
+  color: white;
+}
+
+.footer ul li {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer input {
+  font-size: 15px;
+  float: left;
+  right: 0;
+  font-weight: bold;
+}
+
+.footer .submit {
+  height: 22.8px;
+  background: #188038;
+  width: 30px;
+  text-align: center;
+}
+
+.footer .input-field span:hover {
+  opacity: 0.5;
+}
+
+.footer .submit i {
+  color: white;
+}
+
+.footer span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer ul li i {
+  margin-left: -25px;
+  color: white;
+}
+
+.footer a:hover,
+.footer ul li:hover,
+.footer ul li i:hover {
+  color: #188038;
+}
+
+.footer a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer a i {
+  color: white;
+}
+
+.footer .inline a {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .second-nav::after {
+    background: none;
+  }
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  .second-nav {
+    display: none;
+  }
+
+  .second-nav ul li a,
+  .second-nav ul li a i {
+    color: #188038;
+    font-weight: 500%;
+  }
+
+  #teams .member {
+    width: 100%;
+  }
+
+  #team-header {
+    width: 80%;
+  }
+}

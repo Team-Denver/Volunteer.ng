@@ -1,0 +1,27 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  width: 100vw;
+  background-color: rgba(0, 128, 0, 0.45);
+  color: white;
+  padding: 0 30px;
+  position: fixed;
+  top: 3vh; /*Position this right under the top banner*/
+  z-index: 2;
+}
+
+.page-header__logo {
+  height: 80%;
+  margin-right: 15px;
+}
+
+.page-header__title {
+  width: 50%;
+  text-align: left;
+  z-index: 0;
+}
+
+.page-header__nav {
+  display: flex;
+}

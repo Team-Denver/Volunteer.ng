@@ -1,0 +1,31 @@
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 3vh;
+  border: 1px solid green;
+  color: white;
+  background-color: rgb(1, 83, 1);
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.top-banner__social-media {
+  font-size: 80%;
+}
+
+.top-banner__social-media__info {
+  margin-right: 10px;
+}
+
+.top-banner__contact {
+  font-size: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top-banner__contact__info {
+  margin-right: 10px;
+}

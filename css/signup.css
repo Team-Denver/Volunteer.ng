@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+.moving-volunteer {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.firstContainer {
+    background-image: url(https://s3-alpha-sig.figma.com/img/6377/4b92/19442d3586cf7e0683c684acddfb73a9?Expires=1567987200&Signature=D4WWU8354f19fhuYZ7jz3PSe7qHXEE4YHmOBCo1DdAfuMyVMh5maPK7CICiq45a2wwXDN93ZSMpD8Aezh~jZGxXvy2uzhDktKNc8-GdY8PW5tJWWBpfOwGbmS7hY~xJ0edP~CEcKooknvOtIZsvB5L~N2wY2ozfuY2QqupKsAgSWc~sNGOGRnbp~GX6y1~xhbod5sRk8h~56VgB9RRIB8miWMelMXzkrx~XUBOxoxLwGzwhqYHYORwZWoN4ogYdH6IFAp-Hwe5TEWNVCGrvPirVmdrnIWDQoNVZ66hb97aJxRMqbiMfR2jAsStVtaZCw6jqrVgYCkhqabLooJy0LSw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-position: left;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.63;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0em 2em;
+}
+
+.firstContainer h1 {
+    font-size: 2em
+}
+
+span {
+    display: block;
+    font-size: 1.4em
+}
+
+.horizontalLine {
+    margin-top: 2.5em;
+    margin-left: -19.8em;
+    width: 6em;
+    border: none;
+    border-top: 5px solid #ffffff;
+    position: fixed
+}
+
+.firstContainer p {
+    letter-spacing: 0.1em;
+    line-height: 1.1em;
+    font-size: 1.1em;
+    padding-top: 25%;
+    width: 40vw;
+    position: fixed;
+    font-family: cursive;
+
+}
+
+.secondContainer {
+    background-color: white;
+    height: 100%;
+    padding: 0em 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.secondContainer h2 {
+    font-size: 1.8em;
+    letter-spacing: 0.2em
+}
+
+.horizontalLine2 {
+    margin-top: 0em;
+    width: 4em;
+    border: none;
+    border-top: 5px solid #188038;
+}
+
+.secondContainer p {
+    margin: 1em 0em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em
+}
+
+.secondContainer p a {
+    text-decoration: none;
+    color: #188038;
+    font-weight: bold;
+    font-size: 1.4em
+}
+
+.secondContainer p a:hover {
+    text-decoration: underline;
+    text-decoration-color: #188038;
+    color: #19c44c;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: rgb(219, 207, 207)
+}
+
+:-moz-placeholder {
+    color: rgb(219, 207, 207)
+}
+
+:-ms-input-placeholder {
+    color: rgb(219, 207, 207)
+}
+
+.secondContainer input {
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1.5em 0em 1.5em 1em;
+    border-radius: 1em;
+}
+
+form button {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0em;
+    color: white;
+    background-color: #188038;
+    border-radius: 0.5em;
+    border: 1px solid #188038
+}
+
+form button:hover {
+    background-color: #19c44c;
+    border: 1px solid #19c44c;
+    cursor: pointer;
+}

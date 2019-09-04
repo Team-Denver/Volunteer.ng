@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55vh;
+  width: 40vh;
+  box-shadow: 2px 2px 15px 0 black;
+  border-radius: 10px;
+  background-color: rgb(241, 255, 250);
+  color: black;
+}
+
+.card__thumbnail {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+
+  /*For font-awesome icons*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content {
+  background-color: inherit;
+  padding: 10%;
+}
+
+.card__content.is-overlapping {
+  position: relative;
+  top: -50px;
+  width: 80%;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.45);
+}
+
+.card__content__action-button {
+  box-shadow: none;
+}
+
+.card__content__action-button.is-floating {
+  position: absolute;
+}

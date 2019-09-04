@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+  height: 40px;
+  padding: 5px 20px;
+  border: none;
+  border-radius:  4px;
+  background-color: green;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-button {
+  background-color: transparent;
+  box-shadow: none;
+  color: inherit;
+  margin-right: 10px;
+}
+
+.nav-button.is-current-page {
+  background-color: rgb(1, 99, 1);
+  color: white;
+}
+
+.nav-button:hover {
+  background-color: green;
+}
+
+.nav-button:active {
+  box-shadow: none;
+}
+
+.button i, .button img {
+  margin: 10px;
+}
+
+.button.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  /*pointer-events: none;*/ /*This prevents clicking on the disabled button, but overrides visual feedback provided by 'cursor: not-allowed'*/
+}

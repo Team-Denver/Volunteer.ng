@@ -1,0 +1,572 @@
+    #container {
+      background: #e0fce0;
+      font-size: 14px;
+      margin: 0px 70px;
+      border: 0;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      font-weight: bold;
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 5px;
+      padding-bottom: 12px;
+      /* height: 800px; */
+      border-radius: 10px;
+
+    }
+
+    .break {
+      clear: both;
+
+    }
+
+    /* form {
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 50px;
+      height: 100%;
+      text-align: center;
+    } */
+
+    input {
+      background-color: #eee;
+      border: none;
+      padding: 4px 7px;
+      margin: 4px 0;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    select {
+      background-color: #eee;
+      color: #000;
+      border: none;
+      padding: 7px 7px;
+      margin: 8px 0;
+      border-radius: 8px;
+      width: 100%;
+      height: 14%;
+    }
+
+
+
+    #render {
+      text-align: center;
+      font-weight: bold;
+      font-size: 22px;
+      color: black;
+      margin: 0px, 0px, 10px, 0px;
+
+    }
+
+    u {
+      text-decoration: underline solid #188038;
+      margin-top: 6px;
+    }
+
+    .how {
+      padding-left: 35px;
+      margin-bottom: 15px;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .midmenugreen {
+      height: 35px;
+      width: 34%;
+      background-color: #188038;
+      color: white;
+      margin: 0px, 0px, 0px, 0px;
+      float: left;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    #midmenuwhite {
+      background-color: white;
+      color: #188038;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      text-align: center;
+      height: 35px;
+      font-size: 18px;
+      width: 31.8%;
+      float: left;
+      margin-top: 10px;
+      border: 0.5px solid #188038;
+    }
+
+    #tohelp {
+      margin-top: 45px;
+      margin-left: 30px;
+
+    }
+
+    .service {
+      font-size: 0.8em;
+      margin-left: 55px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      margin: 10px, 10px;
+
+
+    }
+
+    .servicedropdown {
+      margin-left: 60px;
+      height: 10px;
+      margin-bottom: 55px;
+      margin-top: 5px;
+    }
+
+    .servicedropdown select {
+      border: #188038 solid 1px;
+      width: 320px;
+      height: 40px;
+    }
+
+    .othersinput {
+      margin-left: 60px;
+    }
+
+    .othersinput input {
+      height: 90px;
+      width: 1100px;
+      border: 0.5px solid #188038;
+    }
+
+    .pay-button-container {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .pay-button {
+      background-color: #188038;
+      color: #fff;
+      border: 0;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 17px;
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 170px;
+      height: 70px;
+      display: inline-block;
+    }
+
+    a.pay-buttton {
+      background-color: #188038;
+      color: #fff;
+      border: 0;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 17px;
+      padding-top: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+      width: 170px;
+      height: 70px;
+      display: inline-block;
+    }
+
+
+
+    .pay-button .disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    hr {
+      margin: 20px 0px;
+      border: 1px solid #188038;
+      margin-bottom: 20px;
+      margin-bottom: 20px;
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+
+    .contactmenu {
+      margin: 40px 0px 40px 60px;
+      font-size: 0.8em;
+      font-weight: bold;
+      float: left;
+    }
+
+    .contactmenu input {
+      margin: 10px 0px 0px 5px;
+      width: 480px;
+      height: 30px;
+      border: #188038 solid 1px;
+    }
+
+    .locations {
+      float: left;
+      font-size: 0.8em;
+      font-weight: bold;
+      margin: 0px 0px 40px 65px;
+    }
+
+    .locations select {
+      border: #188038 solid 1px;
+      width: 480px;
+      height: 30px;
+    }
+
+    .contact {
+      margin-left: 45px;
+      font-weight: bold;
+
+
+    }
+
+    .number {
+      margin: 0px 0px 40px 60px;
+      float: left;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+
+    .number input {
+      margin: 0px 0px 0px 5px;
+      width: 480px;
+      height: 30px;
+      border: #188038 solid 1px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 300px;
+    }
+
+    .col-1 {
+      width: 8.33%;
+    }
+
+    .col-2 {
+      width: 16.66%;
+    }
+
+    .col-3 {
+      width: 25%;
+    }
+
+    .col-4 {
+      width: 33.33%;
+    }
+
+    .col-5 {
+      width: 41.66%;
+    }
+
+    .col-6 {
+      width: 50%;
+    }
+
+    .col-7 {
+      width: 58.33%;
+    }
+
+    .col-8 {
+      width: 66.66%;
+    }
+
+    .col-9 {
+      width: 75%;
+    }
+
+    .col-10 {
+      width: 83.33%;
+    }
+
+    .col-11 {
+      width: 91.66%;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    .topmost-nav {
+      position: relative;
+      display: block;
+      height: 60px;
+      background-color: white;
+      padding: 0 15px 0 15px;
+      z-index: 1;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .topmost-nav .left,
+    .topmost-nav .right {
+      display: inline-block;
+      padding-top: 20px;
+    }
+
+    .topmost-nav .left {
+      float: left;
+      margin-left: 10px;
+    }
+
+    .topmost-nav .right {
+      float: right;
+      margin-right: 10px;
+      text-align: right;
+      right: 0;
+    }
+
+    .topmost-nav .right a {
+      margin-right: 20px;
+    }
+
+    .topmost-nav .left a:hover i {
+      font-size: 2.5ex;
+    }
+
+    i {
+      color: #188038;
+    }
+
+    a {
+      text-decoration: none;
+      color: #188038;
+    }
+
+    .second-nav {
+      position: relative;
+      display: block;
+      height: 90px;
+      z-index: 1;
+    }
+
+    .second-nav::after {
+      content: "";
+      background-image: url(../images/elderr.png);
+      opacity: 0.9;
+      top: 0px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      background-position: center -600px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -5;
+      height: 90px;
+    }
+
+    .second-nav #branding img {
+      margin: 10px 0 10px 20px;
+    }
+
+    .second-nav div {
+      display: block;
+      float: left;
+      z-index: 1;
+    }
+
+    .second-nav ul {
+      list-style-type: none;
+      float: right;
+      padding-top: 20px;
+    }
+
+    .second-nav ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    .second-nav ul li a,
+    .second-nav ul li a i {
+      color: white;
+      font-weight: 500%;
+    }
+
+    .second-nav ul li a:hover,
+    .second-nav ul li a:hover i {
+      color: #188038;
+    }
+
+    #team-header {
+      min-height: 200px;
+      background: #ccfccb;
+      text-align: center;
+      color: #000000;
+      font-size: 14px;
+      margin: 70px;
+      border: 0;
+      font-weight: bold;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 15px;
+    }
+
+    #teams .container {
+      display: block;
+      padding: 0 10%;
+      margin: 0 auto;
+    }
+
+    #teams .member {
+      float: left;
+      text-align: center;
+      width: 20%;
+      padding: 6px;
+      padding-bottom: 15px;
+      margin: 4px;
+      font-weight: 500;
+    }
+
+    #teams .member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px #188038 solid;
+    }
+
+    #teams .member img:hover {
+      opacity: 0.5;
+    }
+
+    #teams .member a {
+      text-decoration: none;
+      color: #188038;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #031308;
+    }
+
+    .footer {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .footer div:nth-child(1) {
+      text-align: center;
+      padding: 20px;
+      margin: auto 0;
+    }
+
+    .footer div:nth-child(1) i {
+      font-size: 15px;
+      margin-right: 10px;
+    }
+
+    .footer div:not(nth-child(1)) {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .footer span,
+    .footer a {
+      color: white;
+    }
+
+    .footer h3 {
+      margin-left: 20px;
+      color: white;
+    }
+
+    .footer ul li {
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .footer input {
+      font-size: 15px;
+      float: left;
+      right: 0;
+      font-weight: bold;
+    }
+
+    .footer .submit {
+      height: 22.8px;
+      background: #188038;
+      width: 30px;
+      text-align: center;
+    }
+
+    .footer .input-field span:hover {
+      opacity: 0.5;
+    }
+
+    .footer .submit i {
+      color: white;
+    }
+
+    .footer span {
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .footer ul li i {
+      margin-left: -25px;
+      color: white;
+    }
+
+    .footer a:hover,
+    .footer ul li:hover,
+    .footer ul li i:hover {
+      color: #188038;
+    }
+
+    .footer a {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .footer a i {
+      color: white;
+    }
+
+    .footer .inline a {
+      display: inline-block;
+      padding-top: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .second-nav::after {
+        background: none;
+      }
+
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 auto;
+      }
+
+      .second-nav {
+        display: none;
+      }
+
+      .second-nav ul li a,
+      .second-nav ul li a i {
+        color: #188038;
+        font-weight: 500%;
+      }
+
+      #teams .member {
+        width: 100%;
+      }
+
+      #team-header {
+        width: 80%;
+      }
+    }

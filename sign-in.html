@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Volunteer NG | Sign In / Sign Up</title>
+    <link rel="stylesheet" href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/all.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/favicon.ico" sizes="16x16" type="image/png" />
+</head>
+
+<link rel="stylesheet" href="./css/sign-in.css">
+
+<body>
+
+    <head>
+        <div class="container">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <!--Signup-->
+                    <h2>Create Account</h2>
+                    <!-- <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                    <span>Enter Information about your cause</span>
+                    <!--<input type=" " placeholder="Reason for Donation" />-->
+                    <!-- <select name="cars" required>
+                        <option value="Individual">Individual</option>
+                        <option value="Organization">Organization</option>
+                    </select> -->
+                    <input type="text" placeholder="Full Name" required />
+                    <input type="email" placeholder="Email" required />
+                    <input type="password" placeholder="Password" required />
+                    <input type="password" placeholder="Confirm Password" required />
+                    <input type="text" placeholder="Title" required />
+                    <input type="text" placeholder="What you need?" required />
+                    <input type="number" placeholder="Amount Needed" required />
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <!--SignIn-->
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <!--Signup Message-->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome to Volunteer.Ng!</h1>
+                        <!--Default message shuffles different words when signup button is clicked.-->
+                        <p id="change">About 80 percent of Small and Medium Enterprises, SMEs, in Nigeria fail within
+                            the first five
+                            years of their existence due to lack of experience and other wrong business practices.
+                            Do you need a capable and professional hand willing to volunteer for a project?</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <!--Sign Up-->
+                    <div class="overlay-panel overlay-right">
+                        <h1>Welcome Back to Volunteer.Ng!</h1>
+                        <p>To stay connected with us please login with your personal info</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <script src="js/volunteerng-sign-in.js"></script>
+        </div>
+
+</body>
+
+</html>
