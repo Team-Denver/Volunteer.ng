@@ -19,11 +19,11 @@
 }
 
 .landing__headline {
-  margin-bottom: 10vh;
+  margin-bottom: 12vh;
 }
 
 .landing__tag-line {
-  margin-bottom: 10vh;
+  margin-bottom: 12vh;
 }
 
 .landing__actions {
@@ -67,5 +67,5 @@
 }
 
 section, header, footer, aside {
-  border-bottom: 1px solid green; /*For development purposes only. Helps to visualize the sectional divisions.*/
+  border-bottom: 1px solid rgb(17, 212, 105); /*For development purposes only. Helps to visualize the sectional divisions.*/
 }
