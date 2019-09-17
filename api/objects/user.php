@@ -10,6 +10,7 @@ class User
     // object properties
     public $user_id;
     public $fullname;
+    public $username;
     public $email;
     public $password;
     public $phone;
@@ -31,6 +32,7 @@ class User
             SET
                 fullname = :fullname,
                 email = :email,
+                username = :username,
                 password = :password,
                 phone = :phone,
                 user_location = :user_location,
@@ -41,6 +43,7 @@ class User
 
         // sanitize
         $this->fullname = htmlspecialchars(strip_tags($this->fullname));
+        $this->username = htmlspecialchars(strip_tags($this->username));
         $this->email = htmlspecialchars(strip_tags($this->email));
         $this->password = htmlspecialchars(strip_tags($this->password));
         $this->phone = htmlspecialchars(strip_tags($this->phone));
@@ -49,6 +52,7 @@ class User
 
         // bind the values
         $stmt->bindParam(':fullname', $this->fullname);
+        $stmt->bindParam(':username', $this->username);
         $stmt->bindParam(':email', $this->email);
         $stmt->bindParam(':password', $this->password);
         $stmt->bindParam(':phone', $this->phone);
@@ -68,9 +72,10 @@ class User
     {
 
         // query to check if email exists
-        $query = "SELECT user_id, fullname, email, phone, user_location, stack
+        $query = "SELECT user_id, fullname, username, email, phone, user_location, stack
             FROM " . $this->table_name . "
             WHERE email = ?
+            OR username = ?
             LIMIT 0,1";
 
         // prepare the query
@@ -78,9 +83,11 @@ class User
 
         // sanitize
         $this->email = htmlspecialchars(strip_tags($this->email));
+        $this->username = htmlspecialchars(strip_tags($this->username));
 
         // bind given email value
         $stmt->bindParam(1, $this->email);
+        $stmt->bindParam(2, $this->username);
 
         // execute the query
         $stmt->execute();
@@ -97,6 +104,7 @@ class User
             // assign values to object properties
             $this->user_id = $row['user_id'];
             $this->fullname = $row['fullname'];
+            $this->username = $row['username'];
             $this->email = $row['email'];
             $this->password = $row['password'];
             $this->phone = $row['phone'];
@@ -116,9 +124,10 @@ class User
     {
 
         // query to check if email exists
-        $query = "SELECT user_id, fullname, email, phone, user_location, stack
+        $query = "SELECT user_id, fullname, username, email, phone, user_location, stack
             FROM " . $this->table_name . "
             WHERE email = ?
+            OR username = ?
             AND password = ?
             LIMIT 0,1";
 
@@ -127,11 +136,13 @@ class User
 
         // sanitize
         $this->email = htmlspecialchars(strip_tags($this->email));
+        $this->username = htmlspecialchars(strip_tags($this->username));
         $this->password = htmlspecialchars(strip_tags($this->password));
 
         // bind given email & password value
         $stmt->bindParam(1, $this->email);
-        $stmt->bindParam(2, $this->password);
+        $stmt->bindParam(2, $this->username);
+        $stmt->bindParam(3, $this->password);
 
         // execute the query
         $stmt->execute();
@@ -148,6 +159,7 @@ class User
             // assign values to object properties
             $this->user_id = $row['user_id'];
             $this->fullname = $row['fullname'];
+            $this->username = $row['username'];
             $this->email = $row['email'];
             $this->password = $row['password'];
             $this->phone = $row['phone'];

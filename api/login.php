@@ -25,6 +25,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 // set product property values
 $user->email = $data->email;
+$user->username = $data->username;
 $user->password = $data->password;
 // $email_exists = $user->emailExists();
 $user_exists = $user->loginUser();
@@ -36,6 +37,7 @@ if ($user_exists) {
     $user_arr = array(
         'user_id' => $user->user_id,
         'fullname' => $user->fullname,
+        'username' => $user->username,
         'email' => $user->email,
         'phone' => $user->phone,
         'user_location' => $user->user_location,

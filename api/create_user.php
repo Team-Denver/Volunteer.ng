@@ -22,6 +22,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 // set product property values
 $user->fullname = $data->fullname;
+$user->username = $data->username;
 $user->password = $data->password;
 $user->email = $data->email;
 $user->phone = $data->phone;
@@ -31,6 +32,7 @@ $user->stack = $data->stack;
 // create the user
 if (
     !empty($user->fullname) &&
+    !empty($user->username) &&
     !empty($user->email) &&
     !empty($user->phone) &&
     !empty($user->user_location) &&
