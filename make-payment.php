@@ -16,7 +16,7 @@ $userId = $_GET['id'];
     <meta property="og:title" content="VolunteerNG" />
     <meta property="og:image" content="https://res.cloudinary.com/judejax/image/upload/v1567639575/volunteerNG_green_background.png" />
     <meta property="og:description" content="Volunteer.ng is a platform for NGOs and other entities in need of funding and manpower from the general public. Registered organizations will be able to create projects and receive funding or volunteer applications from other users." />
-    l-scale=1.0" />
+    
     <title>Volunteer NG | Money Donation</title>
     <link href="./css/fontawesome/css/all.min.css" rel="stylesheet" />
     <link rel="icon" href="https://res.cloudinary.com/judejax/image/upload/v1567639756/favicon.ico" alt="Volunteeer NG Icon" sizes="16x16" type="image/png" />
