@@ -1,7 +1,7 @@
 <?php
 
 // required headers
-header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: http://localhost:8000");
 // header("Content-Type: application/json; charset=UTF-8");
 header('Content-Type: application/json');
 header("Access-Control-Allow-Methods: POST");
