@@ -1,16 +1,31 @@
 <?php
 
 // required headers
-header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: " . $_SERVER['HTTP_ORIGIN']);
 // header("Content-Type: application/json; charset=UTF-8");
-
 header('Content-Type: application/json');
-// header("Access-Control-Allow-Methods: POST");
-header('Access-Control-Allow-Methods: GET, POST, PUT, PATCH, POST, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods');
-header("Access-Control-Max-Age: 86400");
+header("Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS");
+header("Access-Control-Max-Age: 3600");
 // header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-// header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization,X-Requested-With');
+header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods,X-Requested-With');
+
+// array holding allowed Origin domains
+$allowedOrigins = array(
+    '(http(s)://)?(www\.)?my\-domain\.com'
+);
+
+// if (isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] != '') {
+//     foreach ($allowedOrigins as $allowedOrigin) {
+//         if (preg_match('#' . $allowedOrigin . '#', $_SERVER['HTTP_ORIGIN'])) {
+//             header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
+//             header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+//             header('Access-Control-Max-Age: 1000');
+//             header('Content-Type: application/json');
+//             header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+//             break;
+//         }
+//     }
+// }
 
 // files needed to connect to database
 include_once '../config/database.php';
@@ -27,7 +42,7 @@ $user = new User($db);
 $data = json_decode(file_get_contents("php://input"));
 
 // set product property values
-$user->email = $data->email;
+// $user->email = $data->email;
 $user->username = $data->username;
 $user->password = $data->password;
 // $email_exists = $user->emailExists();

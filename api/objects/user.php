@@ -135,12 +135,12 @@ class User
         $stmt = $this->conn->prepare($query);
 
         // sanitize
-        $this->email = htmlspecialchars(strip_tags($this->email));
+        // $this->email = htmlspecialchars(strip_tags($this->email));
         $this->username = htmlspecialchars(strip_tags($this->username));
         $this->password = htmlspecialchars(strip_tags($this->password));
 
         // bind given email & password value
-        $stmt->bindParam(1, $this->email);
+        $stmt->bindParam(1, $this->username);
         $stmt->bindParam(2, $this->username);
         $stmt->bindParam(3, $this->password);
 
