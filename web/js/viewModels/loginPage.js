@@ -8,7 +8,7 @@ define(["ojs/ojcore", "knockout", "jquery", "ojs/ojselectcombobox", "ojs/ojinput
                 password: t.password()
             };
             console.log(n), e.ajax({
-                url: "https://volunteerng.herokuapp.com/api/login.php",
+                url: "http://volunteerng.herokuapp.com/api/login.php",
                 method: "POST",
                 contentType: "application/json",
                 data: n,
