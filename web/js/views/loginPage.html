@@ -1,0 +1,40 @@
+<!-- Login Page -->
+<div class="oj-hybrid-padding oj-panel">
+    <h1>Login</h1>
+    <div id="login-form" class="oj-form-layout">
+        <div class="oj-form">
+
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <label for="userlogin">Username or Email</label>
+                    <input type="text" id="userlogin"
+                        data-bind="ojComponent: {component: 'ojInputText', value: userlogin, required: true}">
+                </div>
+            </div>
+
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <label id="password">Password</label>
+                    <div class="oj-form-control-group" aria-labelledby="password" role="group">
+                        <input type="password" aria-label="password"
+                            data-bind="ojComponent: {component: 'ojInputPassword', value: password, required: true}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="oj-flex">
+                <div class="submit-container">
+                    <!-- <oj-button id="loginBtn" on-oj-action="[[loginUser]]" label="Sign In"></oj-button> -->
+                    <button class="oj-button-primary oj-button-xl" data-bind="click: verifyInfo,
+                      ojComponent: {
+                        component:'ojButton', label: 'Sign In!',
+                        icons: {start:'oj-fwk-icon oj-fwk-icon-clock'},
+                        chroming: 'full', 
+                   }">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <span class="oj-link" data-bind="click: signupClick"><a>Not a member? Sign up</a></span>
+    </div>
+</div>

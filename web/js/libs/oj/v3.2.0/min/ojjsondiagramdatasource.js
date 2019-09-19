@@ -1,0 +1,8 @@
+/**
+ * Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ * The Universal Permissive License (UPL), Version 1.0
+ */
+"use strict";
+define(["ojs/ojcore","ojs/ojdatasource-common"],function(a){a.io=function(g,c){this.Sq=c?c.childData:null;this.Kha={};a.io.N.constructor.call(this,g)};o_("JsonDiagramDataSource",a.io,a);a.f.xa(a.io,a.Dw,"oj.JsonDiagramDataSource");a.io.prototype.getData=function(a){if(a){var c=a.nodes;if(void 0===c&&this.Sq)return c=this.Sq(a),this.Dla(this.Kha[a.id],c),c;this.p2({nodes:c});return Promise.resolve({nodes:c})}return this.data?(this.p2(this.data),Promise.resolve(this.data)):this.Sq?(c=this.Sq(),this.Dla(null,
+c),c):Promise.resolve(null)};a.f.j("JsonDiagramDataSource.prototype.getData",{getData:a.io.prototype.getData});a.io.prototype.p2=function(a){if(this.Sq&&a.nodes){a=a.nodes;for(var c=0;c<a.length;c++)this.Kha[a[c].id]=a[c]}};a.io.prototype.Dla=function(a,c){if(c instanceof Promise){var b=this;c.then(function(c){Array.isArray(c.nodes)&&(a?a.nodes=c.nodes:b.data.nodes=c.nodes,b.p2(c));Array.isArray(c.links)&&(b.data.links=Array.isArray(b.data.links)?b.data.links.concat(c.links):c.links);b.handleEvent("ADD",
+{data:c,parentId:a?a.id:null,index:0})},function(){})}};a.io.prototype.getChildCount=function(a){return a?(a=a.nodes,Array.isArray(a)?a.length:void 0===a&&this.Sq?-1:0):-1};a.f.j("JsonDiagramDataSource.prototype.getChildCount",{getChildCount:a.io.prototype.getChildCount});a.io.prototype.getDescendantsConnectivity=function(){return"unknown"};a.f.j("JsonDiagramDataSource.prototype.getDescendantsConnectivity",{getDescendantsConnectivity:a.io.prototype.getDescendantsConnectivity})});
