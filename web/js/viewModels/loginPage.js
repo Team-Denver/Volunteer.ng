@@ -10,7 +10,7 @@ define(["ojs/ojcore", "knockout", "jquery", "ojs/ojselectcombobox", "ojs/ojinput
             console.log(n), e.ajax({
                 url: "https://volunteerng.herokuapp.com/api/login.php",
                 method: "POST",
-                contentType: "applicantion/json",
+                contentType: "application/json",
                 data: n,
                 success: function (n) {
                     1 == n.status ? (console.log("logged in"), o.Router.rootInstance.go("dashboard")) : (console.log("invalid login / bad parsing"), alert("login failed"))
