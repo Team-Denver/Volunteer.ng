@@ -3,10 +3,12 @@ define(["ojs/ojcore", "knockout", "jquery", "ojs/ojselectcombobox", "ojs/ojinput
         var t = this;
         t.userlogin = n.observable(), t.password = n.observable(), t.res = n.observable(), t.verifyInfo = function () {
             console.log("Button clicked..."), console.log(t.userlogin()), console.log(t.password());
-            var n = {
+
+            // JSON.stringify(myJson)
+            var n = JSON.stringify({
                 username: t.userlogin(),
                 password: t.password()
-            };
+            });
             console.log(n), e.ajax({
                 url: "http://volunteerng.herokuapp.com/api/login.php",
                 method: "POST",
