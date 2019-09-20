@@ -41,7 +41,6 @@ define([
             success: function(o) {
               1 == o.status
                 ? (console.log("registered"),
-                  alert("Registration successful!"),
                   (l.rootModel = e.dataFor(
                     document.getElementById("globalBody")
                   )),
