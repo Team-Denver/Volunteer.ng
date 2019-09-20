@@ -1,4 +1,4 @@
-define(["ojs/ojcore", "knockout", "jquery", "text!"], function(o, e, l) {
+define(["ojs/ojcore", "knockout", "jquery"], function(o, e, l) {
   function a() {
     var o = this;
     (o.fullname = e.observable()),
