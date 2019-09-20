@@ -10,6 +10,7 @@ define([
     var l = this;
     (l.userlogin = e.observable()),
       (l.password = e.observable()),
+      (l.pageMessage = e.observable()),
       (l.res = e.observable()),
       (l.verifyInfo = function() {
         console.log("Button clicked..."),
@@ -37,6 +38,7 @@ define([
                 (l.rootModel = e.dataFor(
                   document.getElementById("globalBody")
                 )),
+                  (l.pageMessage = l.rootModel.progressMessage),
                   (l.rootModel.globalUserid = n.user.user_id),
                   (l.rootModel.globalFullname = n.user.fullname),
                   (l.rootModel.globalEmail = n.user.email),

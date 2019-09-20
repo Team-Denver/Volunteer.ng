@@ -7,12 +7,15 @@
             <div id="login-form" class="oj-form-layout">
 
                 <h1>Login to your account</h1>
+                <b><span data-bind="textInput: pageMessage"></span></b>
+                <br>
                 <div class="oj-form">
 
                     <div class="oj-flex">
                         <div class="oj-flex-item">
                             <label for="userlogin">Username or Email</label>
-                            <input type="text" id="userlogin" data-bind="ojComponent: {component: 'ojInputText', value: userlogin, required: true}">
+                            <input type="text" id="userlogin"
+                                data-bind="ojComponent: {component: 'ojInputText', value: userlogin, required: true}">
                         </div>
                     </div>
 
@@ -20,7 +23,8 @@
                         <div class="oj-flex-item">
                             <label id="password">Password</label>
                             <div class="oj-form-control-group" aria-labelledby="password" role="group">
-                                <input type="password" aria-label="password" data-bind="ojComponent: {component: 'ojInputPassword', value: password, required: true}">
+                                <input type="password" aria-label="password"
+                                    data-bind="ojComponent: {component: 'ojInputPassword', value: password, required: true}">
                             </div>
                         </div>
                     </div>
@@ -34,7 +38,7 @@
                         icons: {start:'oj-fwk-icon oj-fwk-icon-clock'},
                         chroming: 'full', 
                    }">
-                    </button>
+                            </button>
                         </div>
                     </div>
                 </div>
