@@ -7,19 +7,14 @@
             <div id="signup-form" class="oj-form-layout">
 
                 <h1>Create a new account</h1>
-                <!-- <oj-progress style="width:50%" value="{{progressValue}}"></oj-progress> -->
-                <span data-bind="textInput: pageMessage"></span>
                 <div class="oj-form"></div>
                 <div class="oj-flex">
                     <div class="oj-flex-item">
                         <label id="fullname">Full Name</label>
                         <div class="oj-form-control-group" aria-labelledby="fullname" role="group">
-                            <input type="text" aria-label="first name"
-                                data-bind="ojComponent: {component: 'ojInputText', value: firstname, placeholder: 'First name', required: true}">
-                            <input type="text" aria-label="middle name"
-                                data-bind="ojComponent: {component: 'ojInputText', value: middlename, placeholder: 'Middle name'}">
-                            <input type="text" aria-label="last name"
-                                data-bind="ojComponent: {component: 'ojInputText', value: lastname, placeholder: 'Last name', required: true}">
+                            <input type="text" aria-label="first name" data-bind="ojComponent: {component: 'ojInputText', value: firstname, placeholder: 'First name', required: true}">
+                            <input type="text" aria-label="middle name" data-bind="ojComponent: {component: 'ojInputText', value: middlename, placeholder: 'Middle name'}">
+                            <input type="text" aria-label="last name" data-bind="ojComponent: {component: 'ojInputText', value: lastname, placeholder: 'Last name', required: true}">
                         </div>
                     </div>
                 </div>
@@ -34,39 +29,35 @@
                 <div class="oj-flex">
                     <div class="oj-flex-item">
                         <label for="username">Username</label>
-                        <input type="text" id="username"
-                            data-bind="ojComponent: {component: 'ojInputText', value: username, required: true}">
+                        <input type="text" id="username" data-bind="ojComponent: {component: 'ojInputText', value: username, required: true}">
                     </div>
                 </div>
 
                 <div class="oj-flex">
                     <div class="oj-flex-item">
                         <label for="phone">Phone Number</label>
-                        <input type="number" id="phone"
-                            data-bind="ojComponent: {component: 'ojInputText', value: phone, required: true}">
+                        <input type="number" id="phone" data-bind="ojComponent: {component: 'ojInputText', value: phone, required: true}">
                     </div>
                 </div>
 
                 <div class="oj-flex">
                     <div class="oj-flex-item">
                         <label for="stackcombobox">Stack</label>
-                        <input id="stackcombobox" list="stack"
-                            data-bind="ojComponent: {component: 'ojCombobox', multiple: true, value: stack, placeholder: 'Select stack', rootAttributes: {style:'max-width:20em'}}" />
+                        <input id="stackcombobox" list="stack" data-bind="ojComponent: {component: 'ojCombobox', multiple: true, value: stack, placeholder: 'Select stack', rootAttributes: {style:'max-width:20em'}}" />
                         <datalist id="stack">
-                            <option value="Javascript">Javascript</option>
-                            <option value="PHP">PHP</option>
-                            <option value="React">React</option>
-                            <option value="Angular">Angular</option>
-                            <option value="Vue">Vue</option>
-                        </datalist>
+                        <option value="Javascript">Javascript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="React">React</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Vue">Vue</option>
+                    </datalist>
                     </div>
                 </div>
 
                 <div class="oj-flex">
                     <div class="oj-flex-item">
                         <label for="location">Location</label>
-                        <input type="text" id="location"
-                            data-bind="ojComponent: {component: 'ojInputText', value: location, required: true}">
+                        <input type="text" id="location" data-bind="ojComponent: {component: 'ojInputText', value: location, required: true}">
                     </div>
                 </div>
 
@@ -74,10 +65,8 @@
                     <div class="oj-flex-item">
                         <label id="password">Password</label>
                         <div class="oj-form-control-group" aria-labelledby="password" role="group">
-                            <input type="password" aria-label="password"
-                                data-bind="ojComponent: {component: 'ojInputPassword', value: password, placeholder: 'Password', required: true}">
-                            <input type="password" aria-label="verify password"
-                                data-bind="ojComponent: {component: 'ojInputPassword', value: verifyPassword, placeholder: 'Re-type password', required: true}">
+                            <input type="password" aria-label="password" data-bind="ojComponent: {component: 'ojInputPassword', value: password, placeholder: 'Password', required: true}">
+                            <input type="password" aria-label="verify password" data-bind="ojComponent: {component: 'ojInputPassword', value: verifyPassword, placeholder: 'Re-type password', required: true}">
                         </div>
                     </div>
                 </div>
@@ -90,7 +79,7 @@
                         icons: {start:'oj-fwk-icon oj-fwk-icon-clock'},
                         chroming: 'full', 
                    }">
-                        </button>
+                 </button>
                     </div>
                 </div>
                 <span class="oj-link" data-bind="click: loginClick"><a>Already a member? Login</a></span>

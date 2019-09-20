@@ -1,16 +1,1 @@
-define(["ojs/ojcore", "knockout", "jquery"], function(e, n, o) {
-  function a() {
-    var e = this;
-    (e.fullname = n.observable()),
-      (e.userid = n.observable()),
-      (e.email = n.observable()),
-      (e.phone = n.observable()),
-      (e.stack = n.observableArray()),
-      (e.location = n.observable()),
-      (e.handleActivated = function(e) {}),
-      (e.handleAttached = function(e) {}),
-      (e.handleBindingsApplied = function(e) {}),
-      (e.handleDetached = function(e) {});
-  }
-  return new a();
-});
+define(["ojs/ojcore","knockout","jquery","text!"],function(e,o,l){function n(){var e=this;e.fullname=o.observable(),e.userid=o.observable(),e.email=o.observable(),e.phone=o.observable(),e.stack=o.observableArray(),e.location=o.observable(),e.rootModel=o.dataFor(document.getElementById("globalBody")),e.fullname=e.rootModel.globalFullname,e.userid=e.rootModel.globalUserid,e.handleActivated=function(e){},e.handleAttached=function(e){},e.handleBindingsApplied=function(e){},e.handleDetached=function(e){}}return new n});
