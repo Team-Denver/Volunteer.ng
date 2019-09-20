@@ -41,10 +41,7 @@ define([
             success: function(o) {
               1 == o.status
                 ? (console.log("registered"),
-                  (l.rootModel = e.dataFor(
-                    document.getElementById("globalBody")
-                  )),
-                  (l.rootModel.progressMessage = "Registred Succesfully!"),
+                  alert("Registration successful"),
                   e.Router.rootInstance.go("loginPage"))
                 : (console.log("invalid login / bad parsing"),
                   alert("Could not Register"));
