@@ -33,7 +33,7 @@ define([
                 console.log(n.user.email);
                 console.log(n.user.phone);
                 console.log(n.user.stack);
-                console.log(n.user.location);
+                console.log(n.user.user_location);
                 (l.rootModel = e.dataFor(
                   document.getElementById("globalBody")
                 )),
@@ -42,7 +42,7 @@ define([
                   (l.rootModel.globalEmail = n.user.email),
                   (l.rootModel.globalPhone = n.user.phone),
                   (l.rootModel.globalStack = n.user.stack),
-                  (l.rootModel.globalLocation = n.user.location),
+                  (l.rootModel.globalLocation = n.user.user_location),
                   o.Router.rootInstance.go("dashboard");
               } else
                 console.log("invalid login / bad parsing"),
